@@ -28,7 +28,6 @@ window.addEventListener("scroll", () => {
     }
 });
 
-//========= MOBILE NAV =========//
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
@@ -45,8 +44,6 @@ document.querySelectorAll(".nav-links a").forEach(link => {
         menuBtn.innerHTML = '<i class="ri-menu-3-line"></i>';
     });
 });
-
-//========= PORTFOLIO FILTER =========//
 
 const filterBtns = document.querySelectorAll(".filter-btn");
 const cards = document.querySelectorAll(".portfolio-card");
@@ -78,8 +75,6 @@ filterBtns.forEach(btn => {
 
 });
 
-//========= COUNTERS =========//
-
 const counters = document.querySelectorAll(".counter");
 
 const counterObserver = new IntersectionObserver(entries => {
@@ -108,8 +103,6 @@ const counterObserver = new IntersectionObserver(entries => {
 
 counters.forEach(counterObserver.observe.bind(counterObserver));
 
-//========= PROGRESS BAR =========//
-
 const progress = document.getElementById("progress-bar");
 
 window.addEventListener("scroll", () => {
@@ -117,8 +110,6 @@ window.addEventListener("scroll", () => {
     const current = window.scrollY;
     progress.style.width = (current / total) * 100 + "%";
 });
-
-//========= BACK TO TOP =========//
 
 const topBtn = document.getElementById("backToTop");
 
